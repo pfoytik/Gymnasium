@@ -134,6 +134,12 @@ register(
 )
 
 register(
+    id="Redjack-v1",
+    entry_point="gymnasium.envs.toy_text.redjack:BlackjackEnv",
+    kwargs={"sab": True, "natural": False},
+)
+
+register(
     id="FrozenLake-v1",
     entry_point="gymnasium.envs.toy_text.frozen_lake:FrozenLakeEnv",
     kwargs={"map_name": "4x4"},
